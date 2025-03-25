@@ -7,7 +7,6 @@ import './index.css';
 import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Initialize React Query client
 const queryClient = new QueryClient();
 
 import ErrorBoundary from './ErrorBoundary';
