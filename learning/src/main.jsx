@@ -10,15 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Initialize React Query client
 const queryClient = new QueryClient();
 
-const ErrorBoundary = ({ children }) => {
-  return (
-    <StrictMode>
-      <React.Suspense fallback={<div>Loading...</div>}>
-        {children}
-      </React.Suspense>
-    </StrictMode>
-  );
-};
+import ErrorBoundary from './ErrorBoundary';
 
 createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>
